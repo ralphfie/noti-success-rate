@@ -3,10 +3,10 @@ import { plainToClass } from 'class-transformer';
 import { OutputEntity } from './entities/output.entitiy';
 
 // Authorization token. Get from https://camelia.tm.com.my/monitoring/schedulersr
-const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJSMTAyMTgiLCJpYXQiOjE2MDA4NDY3NzMsImV4cCI6MTYwMDg1MDM3M30.TZ3aAehIPE-dpJSejhXr0jihSPSHVUw-51htYOudeFM';
+const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJSMTAyMTgiLCJpYXQiOjE2MDA5MTM2MTYsImV4cCI6MTYwMDkxNzIxNn0.J7gX2fSBTPKrOMV8_pOh0KDk78CJx1nDzkMbFxH2u5U';
 // Request URL. Get from https://camelia.tm.com.my/monitoring/schedulersr
-const fiberHttp = 'https://camelia.tm.com.my:1880/fylia/api/report/scheduler_successrate_service?date=23-09-2020';
-const copperHttp = 'https://camelia.tm.com.my:1880/dylia/api/report/scheduler_successrate_service?date=23-09-2020&network=all';
+const fiberHttp = 'https://camelia.tm.com.my:1880/fylia/api/report/scheduler_successrate_service?date=24-09-2020';
+const copperHttp = 'https://camelia.tm.com.my:1880/dylia/api/report/scheduler_successrate_service?date=24-09-2020&network=all';
 
 @Injectable()
 export class SuccessrateService {
