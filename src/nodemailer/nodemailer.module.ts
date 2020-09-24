@@ -13,8 +13,8 @@ import { SuccessrateModule } from 'src/successrate/successrate.module';
         port: 587,
         secure: false,
         auth: {
-          user: 'camelia.rnd@gmail.com',//process.env.MAILDEV_INCOMING_USER,
-          pass: 'c@m3l1@rnd',//process.env.MAILDEV_INCOMING_PASS,
+          user: 'camelia.rnd@gmail.com',//Email,
+          pass: 'c@m3l1@rnd',//Password email,
         },
       },
       defaults:{

@@ -2,8 +2,6 @@ import { Injectable } from '@nestjs/common';
 import { MailerService } from '@nestjs-modules/mailer';
 import { SuccessrateService } from 'src/successrate/successrate.service';
 
-const test = 'halu';
-
 @Injectable()
 export class NodemailerService {
 constructor(private readonly mailerService: MailerService,
@@ -21,7 +19,6 @@ constructor(private readonly mailerService: MailerService,
           })
           .then((success) => {
               console.log('Success sent Email')
-              //console.log(fiber)
           })
           .catch((err) => {
               console.log(err)

@@ -74,7 +74,7 @@ export class SuccessrateService {
              const output = await obs$.toPromise();
              const test = plainToClass(OutputEntity,output.data) ;
              const lowcopper = [];
-             //console.log("\n Low Percentange(Less than 85) :- \n");
+
              test.data.forEach(element => {
                  if (element.poller_success_rate < 85) {
                   
@@ -107,7 +107,6 @@ export class SuccessrateService {
                       }
                      }
              });
-            //console.log(lowcopper);
             return lowcopper
           } catch (e) {return e}
     }

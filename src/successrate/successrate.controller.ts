@@ -7,13 +7,14 @@ import { ApiTags } from '@nestjs/swagger';
 export class SuccessrateController {
     constructor(private readonly client: SuccessrateService ) {}
     
-     // Tring to fetch single value from api
+     // Poller success rate for Fiber
      @Get('fiber-data')
      @UseInterceptors(ClassSerializerInterceptor)
      getSuccessRateFiber():Promise<String>{
        return this.client.getSuccessRateFiber();
      }
-
+     
+     // Poller success rate for Copper
      @Get('copper-data')
      @UseInterceptors(ClassSerializerInterceptor)
      getSuccessRateCopper():Promise<String>{
