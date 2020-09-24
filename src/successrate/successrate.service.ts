@@ -3,7 +3,7 @@ import { plainToClass } from 'class-transformer';
 import { OutputEntity } from './entities/output.entitiy';
 
 // Authorization token. Get from https://camelia.tm.com.my/monitoring/schedulersr
-const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJSMTAyMTgiLCJpYXQiOjE2MDA5MTM2MTYsImV4cCI6MTYwMDkxNzIxNn0.J7gX2fSBTPKrOMV8_pOh0KDk78CJx1nDzkMbFxH2u5U';
+const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJSMTAyMTgiLCJpYXQiOjE2MDA5Mjk4NzcsImV4cCI6MTYwMDkzMzQ3N30.UwgZ_G-bYppNAEBD6fI4gcppHjB2kd0l8_W88lzfuxw';
 // Request URL. Get from https://camelia.tm.com.my/monitoring/schedulersr
 const fiberHttp = 'https://camelia.tm.com.my:1880/fylia/api/report/scheduler_successrate_service?date=24-09-2020';
 const copperHttp = 'https://camelia.tm.com.my:1880/dylia/api/report/scheduler_successrate_service?date=24-09-2020&network=all';
