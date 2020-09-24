@@ -8,7 +8,7 @@ export class TasksService {
     constructor(private readonly telegram: TelegramService,
          private readonly mail: NodemailerService) { }
 
-    @Cron('* * 8 * * *') // every 8 AM it will execute program
+    @Cron('00 22 10 * * *') // every 8 AM it will execute program. Format XX(sec).XX(min).XX(hour)
     handleCron() {
         console.log(`\n|${new Date().toLocaleTimeString()}| \nSuccess Sent TasksService`);
         this.telegram.botSendMessage(); // to telegram
