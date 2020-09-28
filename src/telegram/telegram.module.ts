@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { ScheduleModule } from '@nestjs/schedule';
 import { SuccessrateModule } from 'src/successrate/successrate.module';
 import { TelegramController } from './telegram.controller';
 import { TelegramService } from './telegram.service';
